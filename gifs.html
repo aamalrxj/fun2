@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Favorite GIFs</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #000; --fg: #eafcff; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Quicksand', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      min-height: 100vh;
+    }
+    header, main { width: min(92vw, 960px); margin: 0 auto; }
+    header { padding: 3rem 0 1rem; text-align: center; }
+    h1 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); letter-spacing: 0.6px; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 1.75rem; padding: 2rem 0 4rem; }
+    figure { text-align: center; }
+    img, video {
+      width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover;
+      border-radius: 16px; border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 1.2vmin 3vmin rgba(0,0,0,0.45); background: rgba(0,0,0,0.25);
+    }
+    figcaption { margin-top: 0.5rem; opacity: 0.9; font-weight: 600; }
+    .back { position: fixed; top: 1rem; left: 1rem; }
+    .btn {
+      padding: 0.6rem 0.9rem; border-radius: 999px; border: 1px solid rgba(255,255,255,0.25);
+      background: rgba(0,0,0,0.35); color: var(--fg); cursor: pointer; backdrop-filter: blur(6px);
+    }
+  </style>
+</head>
+<body>
+  <button class="btn back" onclick="history.back()">← Back</button>
+  <header><h1>You & Me</h1></header>
+  <main>
+    <section class="grid">
+        <figure>
+        <img src="images/tj.gif" alt="Scooby‑Doo animated" loading="lazy" width="1280" height="720">
+        <figcaption>The Way How You Treat Me</figcaption>
+      </figure>
+      <figure>
+        <img src="images/sd.gif" alt="Scooby‑Doo animated" loading="lazy" width="1280" height="720">
+        <figcaption>The Way I Am Gonna Carry You When Something Scary Happens</figcaption>
+      </figure>
+      <figure>
+        <img src="images/d.gif" alt="Dora animated" loading="lazy" width="1280" height="720">
+        <figcaption>The Way I Admire Your beauty Every Time I See You</figcaption>
+      </figure>
+      <figure>
+        <img src="images/jk.gif" alt="Jackie Chan animated" loading="lazy" width="1280" height="720">
+        <figcaption>The Way I Wanna Protect You From People Who Treat You Wrong</figcaption>
+      </figure>
+      <figure>
+        <img src="images/sc.gif" alt="Jackie Chan animated" loading="lazy" width="1280" height="720">
+        <figcaption>The Way How You Behave When I Ask You To Study</figcaption>
+      </figure>
+      <figure>
+        <img src="images/ch.gif" alt="Chhota Bheem animated" loading="lazy" width="1280" height="720">
+        <figcaption>How You Should Be A Good Girl And Go Back To Studying</figcaption>
+      </figure>
+    </section>
+  </main>
+</body>
+</html>
